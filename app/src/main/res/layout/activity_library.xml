@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Screen heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library Book Request"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the details of the book you wish to borrow."
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ISBN -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ISBN"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter book ISBN"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Author -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter author's name"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Book title -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter book title"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Student ID -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID Number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter student ID number"
+            android:inputType="text"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Borrowed date -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Borrowed"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBorrowDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Borrowing Date"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Return date -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Return"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReturnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Return Date"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Submit request -->
+
+        <Button
+            android:id="@+id/btnSubmitBookRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Book Request" />
+
+    </LinearLayout>
+
+</ScrollView>
